@@ -8,80 +8,98 @@
             name="description"
             content="Web site created using create-react-app"
     />
-    <link href="style.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
     <title>Explore</title>
 </head>
+<body>
 
-<body style="background-color:black;">
-<div class="wd-main">
-
-    <input id="search-field" placeholder="Search Tuiter"/>
-    <a href="explore-settings.html">
-        <i class="fa fa-gear" style="font-size:20px;color:#1da0f2;float:right;margin-right:12px;
+<div class="d-none d-xxl-block fa-2x">
+    <div class="row">
+        <div class="col-2">
+            <h3>Sidebar</h3></div>
+        <div class="col-6">
+            <div class="wd-main">
+                <input id="search-field" placeholder="Search Tuiter"/>
+                <a href="explore-settings.html">
+                    <i class="fa fa-gear" style="font-size:30px;color:#1da0f2;float:right;margin-right:12px;
     margin-top:5px;"></i>
-    </a>
-    <br>
+                </a>
+                <br>
+            </div>
+
+            <button class="wd-button-select">For You</button>
+            <button class="wd-button-non-select">Trending</button>
+            <button class="wd-button-non-select">COVID-19</button>
+            <button class="wd-button-non-select">News</button>
+            <button class="wd-button-non-select">Sports</button>
+            <button class="wd-button-non-select">Entertainment</button>
+            <div class="wd-main">
+                <hr>
+                <div class="wd-topic">
+                    <p>Trending in Science</p>
+                    <p class="wd-title">Starship</p>
+                    <p>55.5k Tuits</p>
+                </div>
+                <hr>
+                <div class="wd-topic">
+                    <p>Sports - Trending</p>
+                    <p class="wd-title">Joe Rogan</p>
+                    <p>5,218 Tuits</p>
+                </div>
+                <hr>
+                <div class="wd-author">
+                    <img src="images/nyc.jpg">
+                    <p class="wd-author">The New York Times</p>
+                    <p style="display: inline;"> - Yesterday</p>
+                    <p class="wd-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
+                    <br>
+                    <br>
+                </div>
+                <hr>
+                <div class="wd-author">
+                    <img src="images/vax.jpg">
+                    <p class="wd-author">Bloomberg Opinion</p>
+                    <p style="display: inline;"> - Yesterday</p>
+                    <p class="wd-title">Thinking about getting a booster? Read this first.</p>
+                    <br>
+                    <br>
+                </div>
+                <hr>
+                <div class="topic-photo">
+                    <img src="images/pic.jpg">
+                    <p style="display: inline;"> COVID-19 - Yesterday</p>
+                    <p class="wd-title">COVID-19: News and updates for Massachusetts</p>
+                    <br>
+                    <br>
+                </div>
+                <hr>
+                <div class="topic-photo">
+                    <img src="images/forest_bg.jpg">
+                    <p style="display: inline;"> Entertainment - Yesterday</p>
+                    <p class="wd-title">Cast released for next season of Survivor</p>
+                    <br>
+                    <br>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <h3>Sidebar</h3></div></div>
 </div>
 
-    <button class="wd-button-select">For You</button>
-    <button class="wd-button-non-select">Trending</button>
-    <button class="wd-button-non-select">COVID-19</button>
-    <button class="wd-button-non-select">News</button>
-    <button class="wd-button-non-select">Sports</button>
-    <button class="wd-button-non-select">Entertainment</button>
+<div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+<div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+<div class="d-none d-md-block d-lg-none fa-2x">M</div>
+<div class="d-none d-sm-block d-md-none fa-2x">S</div>
 
-<div class="wd-main">
-    <hr>
-    <div class="wd-topic">
-        <p>Trending in Science</p>
-        <p class="wd-title">Starship</p>
-        <p>55.5k Tuits</p>
-    </div>
-    <hr>
-    <div class="wd-topic">
-        <p>Sports - Trending</p>
-        <p class="wd-title">Joe Rogan</p>
-        <p>5,218 Tuits</p>
-    </div>
-    <hr>
-    <div class="wd-author">
-        <img src="images/nyc.jpg">
-        <p class="wd-author">The New York Times</p>
-        <p style="display: inline;"> - Yesterday</p>
-        <p class="wd-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
-        <br>
-        <br>
-    </div>
-    <hr>
-    <div class="wd-author">
-        <img src="images/vax.jpg">
-        <p class="wd-author">Bloomberg Opinion</p>
-        <p style="display: inline;"> - Yesterday</p>
-        <p class="wd-title">Thinking about getting a booster? Read this first.</p>
-        <br>
-        <br>
-    </div>
-    <hr>
-    <div class="topic-photo">
-        <img src="images/pic.jpg">
-        <p style="display: inline;"> COVID-19 - Yesterday</p>
-        <p class="wd-title">COVID-19: News and updates for Massachusetts</p>
-        <br>
-        <br>
-    </div>
-    <hr>
-    <div class="topic-photo">
-        <img src="images/forest_bg.jpg">
-        <p style="display: inline;"> Entertainment - Yesterday</p>
-        <p class="wd-title">Cast released for next season of Survivor</p>
-        <br>
-        <br>
-    </div>
-    <hr>
 
-</div>
+
+
+
 
 
 </body>
