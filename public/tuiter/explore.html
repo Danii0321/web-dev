@@ -8,81 +8,642 @@
             name="description"
             content="Web site created using create-react-app"
     />
-    <link href="style.css" rel="stylesheet"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
 
     <title>Explore</title>
 </head>
+<body>
+<br>
+<!-- XXLarge -->
+<div class="d-none d-xxl-block fa-2x">
+    <div class="row">
+        <div class="col-3">
+            <ul class="list-group" style="float: right;font-size:15px;">
+                <li class="list-group-item"><i class="fa fa-twitter"></i></li>
+                <li class="list-group-item "><i class="fa fa-home" style="padding-right:5px"></i>Home</li>
+                <li class="list-group-item" style="background-color: #0d6dfd; color:white;"><i class="fa fa-hashtag" style="padding-right:5px;"></i>Explore</li>
+                <li class="list-group-item" style="padding-right:45px"> <i class="fa fa-bell" style="padding-right:5px"></i>Notifications</li>
+                <li class="list-group-item"><i class="fa fa-envelope" style="padding-right:5px"></i>Messages</li>
+                <li class="list-group-item"><i class="fa fa-bookmark" style="padding-right:5px"></i>Bookmarks</li>
+                <li class="list-group-item"><i class="fa fa-list" style="padding-right:5px"></i>Lists</li>
+                <li class="list-group-item"><i class="fa fa-user" style="padding-right:5px"></i>Profile</li>
+                <li class="list-group-item">
+                    <span class="fa-stack fa-2x" style="padding-right:5px;font-size: 10px;">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                    </span>
+                    More</li>
+                <button class="wd-button">
+                    <a class="nav-link active" href="tuit.html" style="color:white">Tuit</a>
+                </button>
+            </ul>
 
-<body style="background-color:black;">
-<div class="wd-main">
+        </div>
 
-    <input id="search-field" placeholder="Search Tuiter"/>
-    <a href="explore-settings.html">
-        <i class="fa fa-gear" style="font-size:20px;color:#1da0f2;float:right;margin-right:12px;
-    margin-top:5px;"></i>
-    </a>
-    <br>
+        <div class="col-5">
+            <div class="input-group input-group-sm">
+                <input class="form control form-control-sm rounded-pill" style="width: 92%;border: 1px solid lightgray;padding-left:40px;"
+                       placeholder="Search Tuiter"/>
+                <a href="explore-settings.html">
+                    <i class="fa fa-gear" style="font-size:30px;color:#0d6dfd;float:right;margin-left:12px;margin-top:5px;"></i>
+                </a>
+                <i class="fa fa-search" style="font-size:15px; position:absolute; margin-top:8px; margin-left:10px;"></i>
+            </div>
+
+            <ul class="nav nav-tabs" style="font-size:15px;margin-top:10px;">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+                <div class="wd-container">
+                    <img src="images/starship.jpeg" style="width:100%; height:auto; border-radius:0px;float: left;">
+                    <div class="wd-bottom-left">SpaceX's Starship</div>
+                </div>
+                <div class="wd-tuit">
+                        <img class="wd-img" src="images/react.png">
+                        <p class="wd-small">Web Development</p>
+                        <p class="wd-desc" style="display: inline;">ReactJS </p>
+                        <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                        <p class="wd-small" style="display: inline;"> - 2h </p>
+                        <p class="wd-desc">React.js is a component based front end library that makes it very easy
+                        to build Single Page Applications or SPAs</p>
+                </div>
+
+                <div class="wd-tuit">
+                        <img class="wd-img" src="images/js.png">
+                        <p class="wd-desc" style="display: inline;"><b>JavaScript </b></p>
+                        <i class="fa fa-check-circle" style="font-size:15px; margin:0px;display:inline;"> </i>
+                        <p class="wd-small" style="display: inline;"> - 2h </p>
+                        <p class="wd-desc">JavaScript is a programming language that can run on browsers
+                        as well as desktops</p>
+                    <p class="wd-small">123K Tuits</p>
+                </div>
+
+                <div class="wd-tuit">
+                    <img class="wd-img" src="images/jquery.png" style="width:65px;height:65px;">
+                    <p class="wd-small">Web Development</p>
+                    <p class="wd-desc" style="display: inline;">jQuery</p>
+                    <p class="wd-small">123K Tuits</p>
+                </div>
+
+                <div class="wd-tuit">
+                    <img class="wd-img" src="images/nodejs.png" style="width:65px;height:65px;">
+                    <p class="wd-small">Web Development </p>
+                    <p class="wd-desc" style="display: inline;">NodeJS </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">123K Tuits</p>
+                </div>
+
+        </div>
+        <div class="col-3">
+            <ul class="list-group" style="float:left;font-size:15px;">
+                <li class="list-group-item " style="width:350px;"><p class="wd-desc">Who to Follow </p></li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/java.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Java </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@Java </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/rspace.jpeg">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Relativity Space </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@relativityspace </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/virgin.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Virgin Galactic </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@virgingalactic </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/nasa.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">NASA </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@NASA </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/tesla.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Tesla </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@Tesla </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
-    <button class="wd-button-select">For You</button>
-    <button class="wd-button-non-select">Trending</button>
-    <button class="wd-button-non-select">COVID-19</button>
-    <button class="wd-button-non-select">News</button>
-    <button class="wd-button-non-select">Sports</button>
-    <button class="wd-button-non-select">Entertainment</button>
+<!-- XLarge -->
+<div class="d-none d-xl-block d-xxl-none fa-2x">
+    <div class="row">
+        <div class="col-3">
+            <ul class="list-group" style="float: right;font-size:15px;">
+                <li class="list-group-item"><i class="fa fa-twitter"></i></li>
+                <li class="list-group-item "><i class="fa fa-home" style="padding-right:5px"></i>Home</li>
+                <li class="list-group-item" style="background-color: #0d6dfd; color:white;"><i class="fa fa-hashtag" style="padding-right:5px;"></i>Explore</li>
+                <li class="list-group-item" style="padding-right:45px"> <i class="fa fa-bell" style="padding-right:5px"></i>Notifications</li>
+                <li class="list-group-item"><i class="fa fa-envelope" style="padding-right:5px"></i>Messages</li>
+                <li class="list-group-item"><i class="fa fa-bookmark" style="padding-right:5px"></i>Bookmarks</li>
+                <li class="list-group-item"><i class="fa fa-list" style="padding-right:5px"></i>Lists</li>
+                <li class="list-group-item"><i class="fa fa-user" style="padding-right:5px"></i>Profile</li>
+                <li class="list-group-item">
+                    <span class="fa-stack fa-2x" style="padding-right:5px;font-size: 10px;">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                    </span>
+                    More</li>
+                <button class="wd-button">
+                    <a class="nav-link active" href="tuit.html" style="color:white">Tuit</a>
+                </button>
+            </ul>
 
-<div class="wd-main">
-    <hr>
-    <div class="wd-topic">
-        <p>Trending in Science</p>
-        <p class="wd-title">Starship</p>
-        <p>55.5k Tuits</p>
-    </div>
-    <hr>
-    <div class="wd-topic">
-        <p>Sports - Trending</p>
-        <p class="wd-title">Joe Rogan</p>
-        <p>5,218 Tuits</p>
-    </div>
-    <hr>
-    <div class="wd-author">
-        <img src="images/nyc.jpg">
-        <p class="wd-author">The New York Times</p>
-        <p style="display: inline;"> - Yesterday</p>
-        <p class="wd-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
-        <br>
-        <br>
-    </div>
-    <hr>
-    <div class="wd-author">
-        <img src="images/vax.jpg">
-        <p class="wd-author">Bloomberg Opinion</p>
-        <p style="display: inline;"> - Yesterday</p>
-        <p class="wd-title">Thinking about getting a booster? Read this first.</p>
-        <br>
-        <br>
-    </div>
-    <hr>
-    <div class="topic-photo">
-        <img src="images/pic.jpg">
-        <p style="display: inline;"> COVID-19 - Yesterday</p>
-        <p class="wd-title">COVID-19: News and updates for Massachusetts</p>
-        <br>
-        <br>
-    </div>
-    <hr>
-    <div class="topic-photo">
-        <img src="images/forest_bg.jpg">
-        <p style="display: inline;"> Entertainment - Yesterday</p>
-        <p class="wd-title">Cast released for next season of Survivor</p>
-        <br>
-        <br>
-    </div>
-    <hr>
+        </div>
 
+        <div class="col-5">
+            <div class="input-group input-group-sm">
+                <input class="form control form-control-sm rounded-pill" style="width: 92%;border: 1px solid lightgray;padding-left:40px;"
+                       placeholder="Search Tuiter"/>
+                <a href="explore-settings.html">
+                    <i class="fa fa-gear" style="font-size:30px;color:#0d6dfd;float:right;margin-left:12px;margin-top:5px;"></i>
+                </a>
+                <i class="fa fa-search" style="font-size:15px; position:absolute; margin-top:8px; margin-left:10px;"></i>
+            </div>
+
+            <ul class="nav nav-tabs" style="font-size:15px;margin-top:10px;">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <div class="wd-container">
+                <img src="images/starship.jpeg" style="width:100%; height:auto; border-radius:0px;float: left;">
+                <div class="wd-bottom-left">SpaceX's Starship</div>
+            </div>
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/react.png">
+                <p class="wd-small">Web Development</p>
+                <p class="wd-desc" style="display: inline;">ReactJS </p>
+                <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                <p class="wd-small" style="display: inline;"> - 2h </p>
+                <p class="wd-desc">React.js is a component based front end library that makes it very easy
+                    to build Single Page Applications or SPAs</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/js.png">
+                <p class="wd-desc" style="display: inline;"><b>JavaScript </b></p>
+                <i class="fa fa-check-circle" style="font-size:15px; margin:0px;display:inline;"> </i>
+                <p class="wd-small" style="display: inline;"> - 2h </p>
+                <p class="wd-desc">JavaScript is a programming language that can run on browsers
+                    as well as desktops</p>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/jquery.png" style="width:65px;height:65px;">
+                <p class="wd-small">Web Development</p>
+                <p class="wd-desc" style="display: inline;">jQuery</p>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/nodejs.png" style="width:65px;height:65px;">
+                <p class="wd-small">Web Development </p>
+                <p class="wd-desc" style="display: inline;">NodeJS </p>
+                <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+        </div>
+        <div class="col-3">
+            <ul class="list-group" style="float:left;font-size:15px;">
+                <li class="list-group-item " style="width:350px;"><p class="wd-desc">Who to Follow </p></li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/java.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Java </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@Java </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/rspace.jpeg">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Relativity Space </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@relativityspace </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/virgin.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Virgin Galactic </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@virgingalactic </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/nasa.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">NASA </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@NASA </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/tesla.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Tesla </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@Tesla </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
+<!-- Large -->
+<div class="d-none d-lg-block d-xl-none fa-2x">
+    <div class="row">
+        <div class="col-3">
+            <ul class="list-group" style="float:right;font-size:15px;">
+                <li class="list-group-item"><i class="fa fa-twitter"></i></li>
+                <li class="list-group-item "><i class="fa fa-home" style="padding-right:5px"></i> </li>
+                <li class="list-group-item" style="background-color: #0d6dfd; color:white;"><i class="fa fa-hashtag" style="padding-right:5px;"></i> </li>
+                <li class="list-group-item" style="padding-right:5px"> <i class="fa fa-bell" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-envelope" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-bookmark" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-list" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-user" style="padding-right:5px"></i> </li>
+                <li class="list-group-item">
+                    <span class="fa-stack fa-2x" style="padding-right:5px;font-size: 10px;">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                    </span>
+                     </li>
+                <button class="wd-button">
+                    <a class="nav-link active" href="tuit.html" style="color:white;">Tuit</a>
+                </button>
+            </ul>
+
+        </div>
+
+        <div class="col-5" style="min-width: 500px;">
+            <div class="input-group input-group-sm">
+                <input class="form control form-control-sm rounded-pill" style="width: 92%;border: 1px solid lightgray;padding-left:40px;"
+                       placeholder="Search Tuiter"/>
+                <a href="explore-settings.html">
+                    <i class="fa fa-gear" style="font-size:30px;color:#0d6dfd;float:right;margin-left:12px;margin-top:5px;"></i>
+                </a>
+                <i class="fa fa-search" style="font-size:15px; position:absolute; margin-top:8px; margin-left:10px;"></i>
+            </div>
+
+            <ul class="nav nav-tabs" style="font-size:15px;margin-top:10px;">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <div class="wd-container">
+                <img src="images/starship.jpeg" style="width:100%; height:auto; border-radius:0px;float: left;">
+                <div class="wd-bottom-left">SpaceX's Starship</div>
+            </div>
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/react.png">
+                <p class="wd-small">Web Development</p>
+                <p class="wd-desc" style="display: inline;">ReactJS </p>
+                <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                <p class="wd-small" style="display: inline;"> - 2h </p>
+                <p class="wd-desc">React.js is a component based front end library that makes it very easy
+                    to build Single Page Applications or SPAs</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/js.png">
+                <p class="wd-desc" style="display: inline;"><b>JavaScript </b></p>
+                <i class="fa fa-check-circle" style="font-size:15px; margin:0px;display:inline;"> </i>
+                <p class="wd-small" style="display: inline;"> - 2h </p>
+                <p class="wd-desc">JavaScript is a programming language that can run on browsers
+                    as well as desktops</p>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/jquery.png" style="width:65px;height:65px;">
+                <p class="wd-small">Web Development</p>
+                <p class="wd-desc" style="display: inline;">jQuery</p>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/nodejs.png" style="width:65px;height:65px;">
+                <p class="wd-small">Web Development </p>
+                <p class="wd-desc" style="display: inline;">NodeJS </p>
+                <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+        </div>
+        <div class="col-3">
+            <ul class="list-group" style="float:left;font-size:15px;min-width:280px;">
+                <li class="list-group-item "><p class="wd-desc">Who to Follow </p></li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/java.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Java </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@Java </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/rspace.jpeg">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Relativity Space </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@relativityspace </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/virgin.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Virgin Galactic </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@virgingalactic </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/nasa.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">NASA </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@NASA </p>
+                </li>
+                <li class="list-group-item ">
+                    <img class="wd-icon" src="images/tesla.png">
+                    <button class="wd-button-follow" style="display:inline;">
+                        <a class="nav-link active" href=# style="color:white;">Follow </a>
+                    </button>
+                    <p class="wd-desc" style="display: inline;">Tesla </p>
+                    <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                    <p class="wd-small">@Tesla </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Medium -->
+<div class="d-none d-md-block d-lg-none fa-2x">
+    <div class="row">
+        <div class="col-3">
+            <ul class="list-group" style="float:right;font-size:15px;width:100px;">
+                <li class="list-group-item"><i class="fa fa-twitter"></i></li>
+                <li class="list-group-item "><i class="fa fa-home" style="padding-right:5px"></i> </li>
+                <li class="list-group-item" style="background-color: #0d6dfd; color:white;"><i class="fa fa-hashtag" style="padding-right:5px;"></i> </li>
+                <li class="list-group-item" style="padding-right:5px"> <i class="fa fa-bell" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-envelope" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-bookmark" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-list" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-user" style="padding-right:5px"></i> </li>
+                <li class="list-group-item">
+                    <span class="fa-stack fa-2x" style="padding-right:5px;font-size: 10px;">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+                <button class="wd-button">
+                    <a class="nav-link active" href="tuit.html" style="color:white;">Tuit</a>
+                </button>
+            </ul>
+
+        </div>
+
+        <div class="col-5" style="min-width: 500px;">
+            <div class="input-group input-group-sm">
+                <input class="form control form-control-sm rounded-pill" style="width: 92%;border: 1px solid lightgray;padding-left:40px;"
+                       placeholder="Search Tuiter"/>
+                <a href="explore-settings.html">
+                    <i class="fa fa-gear" style="font-size:30px;color:#0d6dfd;float:right;margin-left:12px;margin-top:5px;"></i>
+                </a>
+                <i class="fa fa-search" style="font-size:15px; position:absolute; margin-top:8px; margin-left:10px;"></i>
+            </div>
+
+            <ul class="nav nav-tabs" style="font-size:15px;margin-top:10px;">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <div class="wd-container">
+                <img src="images/starship.jpeg" style="width:100%; height:auto; border-radius:0px;float: left;">
+                <div class="wd-bottom-left">SpaceX's Starship</div>
+            </div>
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/react.png">
+                <p class="wd-small">Web Development</p>
+                <p class="wd-desc" style="display: inline;">ReactJS </p>
+                <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                <p class="wd-small" style="display: inline;"> - 2h </p>
+                <p class="wd-desc">React.js is a component based front end library that makes it very easy
+                    to build Single Page Applications or SPAs</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/js.png">
+                <p class="wd-desc" style="display: inline;"><b>JavaScript </b></p>
+                <i class="fa fa-check-circle" style="font-size:15px; margin:0px;display:inline;"> </i>
+                <p class="wd-small" style="display: inline;"> - 2h </p>
+                <p class="wd-desc">JavaScript is a programming language that can run on browsers
+                    as well as desktops</p>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/jquery.png" style="width:65px;height:65px;">
+                <p class="wd-small">Web Development</p>
+                <p class="wd-desc" style="display: inline;">jQuery</p>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/nodejs.png" style="width:65px;height:65px;">
+                <p class="wd-small">Web Development </p>
+                <p class="wd-desc" style="display: inline;">NodeJS </p>
+                <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Small -->
+<div class="d-none d-sm-block d-md-none fa-2x">
+    <div class="row" style="min-width:800px;">
+        <div class="col-3">
+            <ul class="list-group" style="float:right;font-size:15px;">
+                <li class="list-group-item"><i class="fa fa-twitter"></i></li>
+                <li class="list-group-item "><i class="fa fa-home" style="padding-right:5px"></i> </li>
+                <li class="list-group-item" style="background-color: #0d6dfd; color:white;"><i class="fa fa-hashtag" style="padding-right:5px;"></i> </li>
+                <li class="list-group-item" style="padding-right:5px"> <i class="fa fa-bell" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-envelope" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-bookmark" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-list" style="padding-right:5px"></i> </li>
+                <li class="list-group-item"><i class="fa fa-user" style="padding-right:5px"></i> </li>
+                <li class="list-group-item">
+                    <span class="fa-stack fa-2x" style="padding-right:5px;font-size: 10px;">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+                <button class="wd-button">
+                    <a class="nav-link active" href="tuit.html" style="color:white;">Tuit</a>
+                </button>
+            </ul>
+
+        </div>
+
+        <div class="col-5" style="min-width: 500px;">
+            <div class="input-group input-group-sm">
+                <input class="form control form-control-sm rounded-pill" style="width: 92%;border: 1px solid lightgray;padding-left:40px;"
+                       placeholder="Search Tuiter"/>
+                <a href="explore-settings.html">
+                    <i class="fa fa-gear" style="font-size:30px;color:#0d6dfd;float:right;margin-left:12px;margin-top:5px;"></i>
+                </a>
+                <i class="fa fa-search" style="font-size:15px; position:absolute; margin-top:8px; margin-left:10px;"></i>
+            </div>
+
+            <ul class="nav nav-tabs" style="font-size:15px;margin-top:10px;">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <div class="wd-container">
+                <img src="images/starship.jpeg" style="width:100%; height:auto; border-radius:0px;float: left;">
+                <div class="wd-bottom-left">SpaceX's Starship</div>
+            </div>
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/react.png">
+                <p class="wd-small">Web Development</p>
+                <p class="wd-desc" style="display: inline;">ReactJS </p>
+                <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                <p class="wd-small" style="display: inline;"> - 2h </p>
+                <p class="wd-desc">React.js is a component based front end library that makes it very easy
+                    to build Single Page Applications or SPAs</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/js.png">
+                <p class="wd-desc" style="display: inline;"><b>JavaScript </b></p>
+                <i class="fa fa-check-circle" style="font-size:15px; margin:0px;display:inline;"> </i>
+                <p class="wd-small" style="display: inline;"> - 2h </p>
+                <p class="wd-desc">JavaScript is a programming language that can run on browsers
+                    as well as desktops</p>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/jquery.png" style="width:65px;height:65px;">
+                <p class="wd-small">Web Development</p>
+                <p class="wd-desc" style="display: inline;">jQuery</p>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+
+            <div class="wd-tuit">
+                <img class="wd-img" src="images/nodejs.png" style="width:65px;height:65px;">
+                <p class="wd-small">Web Development </p>
+                <p class="wd-desc" style="display: inline;">NodeJS </p>
+                <i class="fa fa-check-circle" style="font-size:15px;margin:0px;display:inline;"> </i>
+                <p class="wd-small">123K Tuits</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

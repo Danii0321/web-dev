@@ -1,0 +1,91 @@
+
+::placeholder{
+   font-size:15px;
+}
+
+.wd-tuit{
+    border: 1px solid lightgray;
+    padding:10px;
+}
+
+.wd-row {
+    clear: both;
+}
+
+button.wd-button{
+    border-radius:50px;
+    font-size:15px;
+    padding:0px;
+    margin-top:10px;
+    border:0px;
+    background-color: #0d6dfd;
+    color:white;
+}
+
+button.wd-button-follow{
+    float: right;
+    border-radius:50px;
+    font-size:15px;
+    padding:0px;
+    border:0px;
+    background-color: #0d6dfd;
+    color:white;
+}
+
+.wd-container {
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.wd-bottom-left{
+    font-family:arial;
+    font-size:25px;
+    color:white;
+    position:absolute;
+    z-index: 100;
+    vertical-align: baseline;
+    padding-left:10px;
+    font-weight: bold;
+}
+
+p.wd-small{
+    font-family:arial;
+    font-size: 15px;
+    color: #6e767d;
+    margin: 0px;
+}
+
+p.wd-desc{
+    font-family: arial;
+    font-size:15px;
+    color: black;
+    margin: 0px;
+    font-weight: bold;
+}
+
+img.wd-img {
+    height: 70px;
+    width: 70px;
+    float: right;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+img.wd-icon {
+    height: 40px;
+    width: 40px;
+    float: left;
+    border-radius: 50px;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+
+
+
+
