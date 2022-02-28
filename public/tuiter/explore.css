@@ -61,7 +61,7 @@ p.wd-small{
 p.wd-desc{
     font-family: arial;
     font-size:15px;
-    color: black;
+    color: white;
     margin: 0px;
     font-weight: bold;
 }
@@ -75,6 +75,15 @@ img.wd-img {
 }
 
 img.wd-icon {
+    height: 40px;
+    width: 40px;
+    float: left;
+    border-radius: 50px;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+#wd-icon {
     height: 40px;
     width: 40px;
     float: left;
