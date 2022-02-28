@@ -168,7 +168,7 @@ console.log(numbersGreaterThan2);
 console.log(evenNumbers);
 console.log(oddNumbers);
 
-console.log('Template strings'
+console.log('Template strings')
 const five = 2 + 3;
 const result1 = "2 + 3 = " + five;
 console.log(result1);
@@ -180,9 +180,115 @@ const username = "alice";
 const greeting1 = `Welcome home ${username}`;
 console.log(greeting1);
 
-const loggedIn = false;
-const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
+const loggedIn2 = false;
+const greeting2 = `Logged in: ${loggedIn2 ? "Yes" : "No"}`;
+console.log(greeting2);
+
+const init = () => {
+    console.log('Hello world from jQuery');
+    /* do the rest of the lab work here */
+
+    const bindById = $('#bind-by-id');
+    const bindByClass = $('.bind-by-class');
+    console.log('Binding to DOM');
+    console.log(bindById);
+    console.log(bindByClass);
+
+    // Change style
+    const changeStyle = $('#change-style');
+    const changeStyle2 = $('.change-style');
+    changeStyle.css('color', 'red');
+    changeStyle2.css('color', 'blue');
+
+    // Get and set attributes
+    const getIdAttr = $("#get-id-attr");
+    const id = getIdAttr.attr('id');
+    console.log(id);
+    const setClassAttr = $("#set-class-attr");
+    setClassAttr.attr('class', 'class-0');
+
+    // Add/remove classes
+    const addClass1Example = $("#add-class-1");
+    addClass1Example.addClass('class-1');
+    const removeClass1Example = $("#remove-class-1");
+    removeClass1Example.removeClass('class-2');
+
+    //hide and show content
+    const hideMe = $("#hide-me");
+    hideMe.hide();
+    const showMe = $("#show-me");
+    showMe.show();
+
+    //create new element
+    const newLineItem = $("<li>Line item 1</li>");
+    const anotherLineItem = $("<li>Line item 2</li>");
+    //append new elements
+    const ul = $("#append-new-elements");
+    ul.append(newLineItem);
+    ul.append(anotherLineItem);
+
+    // Removing elements
+    const removeThisLi = $("#remove-this");
+    const emptyThisUl = $("#empty-this");
+    removeThisLi.remove();
+    // Empty elements
+    emptyThisUl.empty();
+
+    // Change content
+    const changeThisText =
+            $("#change-this-text");
+    const changeThisHtml =
+            $("#change-this-html");
+    changeThisText.html('New text');
+    changeThisHtml.html(`
+        <li>Line item A</li>
+        <li>Line item B</li>
+        <li>Line item C</li>
+    `);
+
+    // Navigating the DOM hierarchy
+    const child2 = $("#child-2");
+    const parent1 =
+        child2.parents("#parent");
+    parent1
+        .css('background-color', 'red')
+        .css('color', 'white');
+
+    const parent = $("#parent");
+    const child = parent.find("#child-2");
+    child.css('background-color', 'blue')
+
+    const handleClick =
+        () => console.log('Handle click');
+    const clickable = $('.clickable');
+    clickable.click(handleClick);
+
+    // Event target
+    const handleEventTarget = (event) => {
+        const target = event.target;
+        console.log(target);
+        $(target)
+            .css('background-color', 'blue')
+            .css('color', 'white');
+    }
+    const eventTarget = $("#event-target");
+    eventTarget.click(handleEventTarget);
+
+    let hideBtn, showBtn, hideShowHeader;
+    hideBtn = $('#hide');
+    showBtn = $('#show');
+    hideShowHeader = $('#hide-show');
+    const hideHandler = () => {
+        hideShowHeader.hide();
+    }
+    const showHandler = () => {
+        hideShowHeader.show();
+    }
+    hideBtn.click(hideHandler);
+    showBtn.click(showHandler);
 
 
+}
+$(init);
 
 
