@@ -2,7 +2,7 @@
 
 console.log('Hello World!');
 
-console.log('Variables and Constants')'
+console.log('Variables and Constants');
 global1 = 10;
 var functionScoped = 2;
 let blockScoped = 5;
