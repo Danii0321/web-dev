@@ -9,7 +9,6 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
                 ${NavigationSidebar()}
             </div>
             <div class="col-sm-10 col-md-10 col-lg-6 col-xl-6">
-
                 ${ExploreComponent()}
              </div>
             <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">

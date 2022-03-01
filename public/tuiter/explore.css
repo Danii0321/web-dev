@@ -4,8 +4,9 @@
 }
 
 .wd-tuit{
-    border: 1px solid lightgray;
+    background-color: #222222;
     padding:10px;
+    border: 0.5px solid #313131;
 }
 
 .wd-row {
@@ -49,12 +50,13 @@ button.wd-button-follow{
     vertical-align: baseline;
     padding-left:10px;
     font-weight: bold;
+    margin-bottom:10px;
 }
 
 p.wd-small{
     font-family:arial;
     font-size: 15px;
-    color: #6e767d;
+    color: #515151;
     margin: 0px;
 }
 

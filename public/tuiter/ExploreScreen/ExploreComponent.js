@@ -7,7 +7,7 @@ const ExploreComponent = () => {
                                <input class="form control form-control-sm rounded-pill" style="width: 90%;border: 1px solid lightgray;padding-left:40px;"
                                       placeholder="Search Tuiter"/>
                                <a href="explore-settings.html">
-                                   <i class="fa fa-gear" style="font-size:30px;color:#0d6dfd;float:right;margin-left:12px;margin-top:5px;"></i>
+                                   <i class="fa fa-gear" style="font-size:30px;color:#29a0d6;float:right;margin-left:12px;margin-top:5px;"></i>
                                </a>
                                <i class="fa fa-search" style="font-size:15px; position:absolute; margin-top:8px; margin-left:10px;"></i>
                            </div>
@@ -15,26 +15,29 @@ const ExploreComponent = () => {
            <ul class="nav mb-2 nav-tabs">
                    <ul class="nav nav-tabs" style="font-size:15px;margin-top:10px;">
                                <li class="nav-item">
-                                   <a class="nav-link active" href="for-you.html">For you</a>
+                                   <a class="nav-link active" href=",,/for-you.html">For you</a>
                                </li>
                                <li class="nav-item">
-                                   <a class="nav-link" href="trending.html">Trending</a>
+                                   <a class="nav-link" href="../trending.html">Trending</a>
                                </li>
                                <li class="nav-item">
-                                   <a class="nav-link" href="news.html">News</a>
+                                   <a class="nav-link" href="../news.html">News</a>
                                </li>
                                <li class="nav-item">
-                                   <a class="nav-link" href="sports.html">Sports</a>
+                                   <a class="nav-link" href="../sports.html">Sports</a>
                                </li>
                                <li class="nav-item">
                                     <div class="d-sm-none d-md-inline d-lg-inline d-xl-inline d-xxl-inline">
-                                   <a class="nav-link" href="entertainment.html">
+                                   <a class="nav-link" href="../entertainment.html">
                                    Entertainment</a>
                                    </div>
                                </li>
                            </ul>
            </ul>
-           <!-- image with overlaid text -->
+            <div class="wd-container">
+                <img src="../images/starship.jpeg" style="width:100%; height:auto; border-radius:0px;float: left;margin-bottom:10px;">
+                    <div class="wd-bottom-left">SpaceX's Starship</div>
+            </div>
            ${PostSummaryList()}
     `);
 }
