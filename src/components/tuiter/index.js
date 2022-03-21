@@ -1,5 +1,6 @@
 import React from "react";
 import NavigationSidebar from "./NavigationSidebar";
+import './../../explore.css';
 const Tuiter = () => {
     return(
         <NavigationSidebar active="home"/>
