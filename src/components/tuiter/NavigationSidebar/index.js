@@ -8,11 +8,7 @@ const NavigationSidebar = (
         <div>
             <div className="list-group">
                 <a className={`list-group-item ${active === 'tuiter' ? 'active' : ''}`} href="/tuiter">
-                    <i className="fa fa-twitter"></i>
-                </a>
-                <a className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="/tuiter">
-                    <i className="fa fa-home" style="padding-right:5px"></i>
-                    <div className="d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Home </div>
+                    <i className="fa fa-twitter" style={{color: "white"}}></i>
                 </a>
             </div>
         </div>
