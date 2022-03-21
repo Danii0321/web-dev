@@ -1,11 +1,12 @@
 import React from "react";
-import NavigationSidebar from "./NavigationSidebar/index";
+import NavigationSidebar from "./NavigationSidebar";
 const Tuiter = () => {
     return(
-        <NavigationSidebar/>
+        <NavigationSidebar active="home"/>
     )
 };
 export default Tuiter;
+
 
 //import React from "react";
 //import {Link} from "react-router-dom";

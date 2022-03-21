@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
-// import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+import './vendors/fontawesome/css/fontawesome.min.css';
+
 
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs";
