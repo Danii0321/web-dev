@@ -1,9 +1,13 @@
 import React from "react";
-import NavigationSidebar from "./NavigationSidebar";
 import './../../explore.css';
+import NavigationSidebar from "./NavigationSidebar";
+import WhoToFollowListItem from "./WhoToFollowList/WhoToFollowListItem";
 const Tuiter = () => {
     return(
-        <NavigationSidebar active="home"/>
+        <>
+            <NavigationSidebar active="home"/>
+            <WhoToFollowListItem/>
+        </>
     )
 };
 export default Tuiter;
