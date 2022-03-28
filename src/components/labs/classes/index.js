@@ -28,7 +28,7 @@ import './index.css';
 
 //Change value based on variable dangerous
  const Classes = () => {
-     const color = 'blue';
+     // const color = 'blue';
      const dangerous = false;
      return(
          <div>
