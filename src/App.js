@@ -1,4 +1,4 @@
-
+import logo from './logo.svg';
 // fontawesome imported via cdn
 import './App.css';
 import './vendors/bootstrap/css/bootstrap.min.css';
