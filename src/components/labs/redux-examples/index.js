@@ -9,18 +9,18 @@ import {createStore, combineReducers}
 import Todos from "./todos-component";
 const reducers =
       combineReducers({hello, todos})
-
 const store = createStore(reducers);
 
+
 const ReduxExamples = () => {
- return(
-   <Provider store={store}>
-     <div>
-       <h2>Redux Examples</h2>
-       <Todos/>
-       <HelloReduxExampleComponent/>
-     </div>
-   </Provider>
- );
+    return(
+        <Provider store={store}>
+            <div>
+                <h2>Redux Examples</h2>
+                <Todos/>
+                <HelloReduxExampleComponent/>
+            </div>
+        </Provider>
+    );
 };
 export default ReduxExamples;
