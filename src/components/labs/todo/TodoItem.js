@@ -1,3 +1,4 @@
+import React from 'react'
 const TodoItem = ({
   //default object for testing
   todo = {
