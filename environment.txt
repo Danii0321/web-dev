@@ -1,0 +1,12 @@
+Notes:
+
+brew install node
+npm install redux --save
+npm install react-redux --save
+npm  install  react-router-dom  --save
+
+if theres a bunch of errors use:
+npm config set fund false --global
+
+begin:
+npm start
