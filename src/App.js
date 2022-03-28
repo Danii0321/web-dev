@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import React from 'react'
+
 // fontawesome imported via cdn
 import './App.css';
 import './vendors/bootstrap/css/bootstrap.min.css';

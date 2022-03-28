@@ -1,4 +1,5 @@
 import ReduxExamples from "./redux-examples";
+import React from 'react'
 const Labs = () => {
   return(
     <div>

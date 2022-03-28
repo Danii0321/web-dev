@@ -1,3 +1,4 @@
+import React from 'react'
 // {   avatarIcon: '../../images/virgin.png', userName: 'Virgin Galactic', handle: 'virgingalactic', },
 
 const WhoToFollowListItem = (
