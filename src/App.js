@@ -22,11 +22,14 @@ function App() {
      <div className="container">
        <Routes>
          <Route path="/">
-           <Route path="labs"
+           <Route path=""
                   element={<Labs/>}/>
+           <Route path="hello"
+            element={<HelloWorld/>}/>
            <Route path="tuiter"
                 element={<Tuiter/>}>
-              <Route index
+
+           <Route index
                     element={<HomeScreen/>}/>
               <Route path="explore"
                   element={<ExploreScreen/>}/>
