@@ -10,31 +10,31 @@ const NavigationSidebar = (
                 <a className={`list-group-item ${active === 'tuiter' ? 'active' : ''}`} href="/tuiter">
                     <i className="fab fa-twitter" aria-hidden="true"></i>
                 </a>
-                <a className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="../home.html">
+                <a className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="/tuiter">
                     <i className="fa fa-home" style={{paddingRight:5}}></i>
                     <div className="d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Home </div>
                 </a>
-                <a className={`list-group-item ${active === 'explore' ? 'active' : ''}`} href="explore.html">
+                <a className={`list-group-item ${active === 'explore' ? 'active' : ''}`} href="/tuiter/explore">
                     <i className="fa fa-hashtag" style={{paddingRight:5}}></i>
                     <div className="d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"> Explore </div>
                 </a>
-                <a className={`list-group-item ${active === 'notifications' ? 'active' : ''}`} href="../notifications.html">
+                <a className={`list-group-item ${active === 'notifications' ? 'active' : ''}`} href="/tuiter/notifications">
                     <i className="fa fa-bell" style={{paddingRight:5}}></i>
                     <div className="d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"> Notifications </div>
                 </a>
-                <a className={`list-group-item ${active === 'messages' ? 'active' : ''}`} href="../messages.html">
+                <a className={`list-group-item ${active === 'messages' ? 'active' : ''}`} href="/messages">
                     <i className="fa fa-envelope" style={{paddingRight:5}}></i>
                     <div className="d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Messages </div>
                 </a>
-                <a className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`} href="../bookmarks.html">
+                <a className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`} href="/bookmarks">
                     <i className="fa fa-bookmark" style={{paddingRight:5}}></i>
                     <div className="d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Bookmarks </div>
                 </a>
-                <a className={`list-group-item ${active === 'lists' ? 'active' : ''}`} href="../lists.html">
+                <a className={`list-group-item ${active === 'lists' ? 'active' : ''}`} href="/lists">
                     <i className="fa fa-list" style={{paddingRight:5}}></i>
                     <div className="d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Lists </div>
                 </a>
-                <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="../profile.html">
+                <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="/profile">
                     <i className="fa fa-user" style={{paddingRight:5}}></i>
                     <div className="d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Profile </div>
                 </a>
