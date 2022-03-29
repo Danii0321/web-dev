@@ -12,7 +12,7 @@ const TuitListItem = ({tuit}) => {
                 <div className="d-flex">
                     <div className="col-1 ">
                         <img className="img img-responsive rounded-circle" width="100%" style={{width: 48, height: 48,
-                        display:"inline",}} src={tuit["logo-image"]} />
+                        display:"inline",}} src={tuit["logo-image"] || tuit["avatar-image"]} />
                     </div>
                     <div className="col-11" style={{paddingLeft: 10, paddingRight: 10}}>
 
@@ -24,8 +24,8 @@ const TuitListItem = ({tuit}) => {
                         { tuit.verified && <i className="fa fa-check-circle"> </i>}
                         <p className="wd-small" style={{display:"inline", marginLeft:5}}>@{tuit.handle} </p>
                         <p className="wd-small" style={{display:"inline"}}> - {tuit.time} </p>
-                        { tuit.title != "" && <p className="wd-desc">{tuit.title} </p>}
-                        { tuit.title == "" && <p className="wd-desc">{tuit.tuit} </p>}
+                        { tuit.title && <p className="wd-desc">{tuit.title}</p> || tuit.tuit && <p className="wd-desc">{tuit.tuit}</p>}
+
                         {
                             tuit.attachments && tuit.attachments.image &&
                             <img src = {tuit.attachments.image} style={{width: "100%", borderRadius: 10, marginTop: 10, marginBottom: 10}}/>
