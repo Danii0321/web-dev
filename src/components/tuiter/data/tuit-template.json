@@ -1,0 +1,24 @@
+[
+  {
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "Me"
+    },
+    "liked": false,
+    "verified": false,
+    "handle": "Me",
+    "time": "Right Now",
+    "title": "",
+    "tuit": "",
+    "attachments": {
+      "video": ""
+    },
+    "logo-image": "",
+    "avatar-image": "",
+    "stats": {
+      "comments": 0,
+      "retuits": 0,
+      "likes": 0
+    }
+  }
+]

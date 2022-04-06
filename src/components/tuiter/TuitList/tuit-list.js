@@ -1,8 +1,8 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector}
   from "react-redux";
 import TuitListItem from "./tuit-list-item"
-import {findAllTuits}
+import {deleteTuit, findAllTuits}
   from "./../actions/tuits-actions";
 
 const TuitList = () => {
@@ -11,16 +11,24 @@ const TuitList = () => {
 
  const dispatch = useDispatch();
 
+ // find all tuits
  useEffect(() =>
    findAllTuits(dispatch),
    []);
 
+
  return ( <ul className="ttr-tuits list-group">
                 {
                   tuits.map && tuits.map(tuit =>
+                  <div>
+                  <i className="fa fa-times float-end" style={{padding: 10}}
+                    onClick={() => deleteTuit(
+                    dispatch, tuit)}></i>
                     <TuitListItem key={tuit._id}
-                                  tuit={tuit}/>)
+                                  tuit={tuit}/>
+                  </div>)
                 }
-              </ul> );
+           </ul>
+         );
 }
 export default TuitList;

@@ -1,11 +1,20 @@
 // import tuits from "../data/tuits.json";
-import {FIND_ALL_TUITS}
+import { CREATE_TUIT, DELETE_TUIT, FIND_ALL_TUITS}
   from "../actions/tuits-actions";
 
 const tuitsReducer = (state = [], action) => {
 switch (action.type) {
    case FIND_ALL_TUITS:
-     return action.tuits;
+      return action.tuits;
+   case DELETE_TUIT:
+      return state.filter(
+        tuit => tuit._id !== action.tuit._id);
+   case CREATE_TUIT:
+      return [
+          ...state,
+          action.newTuit
+        ];
+
    default:
      return state;
  }

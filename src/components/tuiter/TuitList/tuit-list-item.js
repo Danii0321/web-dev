@@ -1,11 +1,7 @@
 import React from 'react'
 import TuitStats from "../TuitStats/tuit-stats"
-import {useDispatch} from "react-redux";
+
 const TuitListItem = ({tuit}) => {
-    const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
     return(
         <div className="wd-tuit">
             <div className="row">
@@ -15,10 +11,6 @@ const TuitListItem = ({tuit}) => {
                         display:"inline",}} src={tuit["logo-image"] || tuit["avatar-image"]} />
                     </div>
                     <div className="col-11" style={{paddingLeft: 10, paddingRight: 10}}>
-
-                        <i onClick={() => deleteTuit(tuit)}
-                            className="fa fa-times" style={{float: "right"}}></i>
-
                         <p className="wd-small">{tuit.topic} </p>
                         <p className="wd-desc" style={{display:"inline"}}><b>{tuit.postedBy.username} </b></p>
                         { tuit.verified && <i className="fa fa-check-circle"> </i>}
@@ -50,15 +42,15 @@ const TuitListItem = ({tuit}) => {
                 <div className="col-1 "/>
                 <div className="col-3 " style={{paddingLeft: 20}}>
                     <i className="far fa-comment" style={{color:"white", paddingRight:10}}></i>
-                    {tuit.stats.comments}
+                    {tuit.stats.comments || 0}
                 </div>
                 <div className="col-3 ">
                     <i className="fas fa-retweet" style={{color:"white", paddingRight:10}}></i>
-                        {tuit.stats.retuits}
+                        {tuit.stats.retuits || 0}
                 </div>
                 <div className="col-3 ">
 
-                    <TuitStats tuit={tuit}/>
+                    {<TuitStats tuit={tuit}/> || 0}
 
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-
+import {createTuit}   from "./../actions/tuits-actions";
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
@@ -8,7 +8,10 @@ const WhatsHappening = () => {
         dispatch({type: 'create-tuit',
             tuit: whatsHappening
         });
+        createTuit(dispatch, newTuit)
     }
+    const [newTuit, setNewTuit] =
+          useState({tuit: 'New tuit'});
     return (
         <>
             <div className="row">
@@ -19,8 +22,11 @@ const WhatsHappening = () => {
                     </div>
                     <div className="col-11" style={{paddingLeft: 20}}>
                       <textarea value={whatsHappening} placeholder="What's happening?"
-                               onChange={(event) =>
-                        setWhatsHappening(event.target.value)}>
+                               onChange={(event) => {
+                        setWhatsHappening(event.target.value)
+                        setNewTuit({...newTuit,
+                            tuit: event.target.value})}
+                        }>
                       </textarea>
                     </div>
                 </div>

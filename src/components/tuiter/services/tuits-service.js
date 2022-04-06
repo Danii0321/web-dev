@@ -7,7 +7,16 @@ export const findAllTuits = async () => {
  return tuits;
 }
 
-export const createTuit = async (tuit) => {}
-export const deleteTuit = async (tuit) => {}
+export const createTuit = async (tuit) => {
+ const response = await axios.post(TUITS_API, tuit)
+ return response.data;
+}
+
+export const deleteTuit = async (tuit) => {
+ const response = await axios
+   .delete(`${TUITS_API}/${tuit._id}`);
+ return response.data;
+}
+
 export const updateTuit = async (tuit) => {}
 
