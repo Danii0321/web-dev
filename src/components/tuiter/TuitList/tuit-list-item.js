@@ -1,5 +1,8 @@
 import React from 'react'
 import TuitStats from "../TuitStats/tuit-stats"
+import TuitDislike from "../TuitStats/tuit-dislike"
+import {useDispatch} from "react-redux";
+
 
 const TuitListItem = ({tuit}) => {
     return(
@@ -11,6 +14,9 @@ const TuitListItem = ({tuit}) => {
                         display:"inline",}} src={tuit["logo-image"] || tuit["avatar-image"]} />
                     </div>
                     <div className="col-11" style={{paddingLeft: 10, paddingRight: 10}}>
+
+
+
                         <p className="wd-small">{tuit.topic} </p>
                         <p className="wd-desc" style={{display:"inline"}}><b>{tuit.postedBy.username} </b></p>
                         { tuit.verified && <i className="fa fa-check-circle"> </i>}
@@ -40,18 +46,19 @@ const TuitListItem = ({tuit}) => {
             </div>
             <div className = "row">
                 <div className="col-1 "/>
-                <div className="col-3 " style={{paddingLeft: 20}}>
+                <div className="col-2 " style={{paddingLeft: 20}}>
                     <i className="far fa-comment" style={{color:"white", paddingRight:10}}></i>
-                    {tuit.stats.comments || 0}
+                    {tuit.stats.comments}
                 </div>
-                <div className="col-3 ">
+                <div className="col-2 ">
                     <i className="fas fa-retweet" style={{color:"white", paddingRight:10}}></i>
-                        {tuit.stats.retuits || 0}
+                        {tuit.stats.retuits}
                 </div>
-                <div className="col-3 ">
-
-                    {<TuitStats tuit={tuit}/> || 0}
-
+                <div className="col-2 ">
+                    <TuitStats tuit={tuit}/>
+                </div>
+                <div className="col-2 ">
+                    <TuitDislike tuit={tuit}/>
                 </div>
             </div>
         </div>
