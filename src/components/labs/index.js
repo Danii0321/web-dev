@@ -4,7 +4,7 @@ import Classes from "./classes";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output/index";
 import TodoList from "./todo/TodoList"
-
+import ReduxExamples from "./redux-examples/index"
 const Labs = () => {
     return(
       <>
@@ -19,18 +19,16 @@ const Labs = () => {
           <Link to="/tuiter">
               Tuiter
           </Link>
+
+          <div>
+            <ReduxExamples/>
+          </div>
       </>
     )
 };
 
 export default Labs;
 
-//return(
-//
-//    <div>
-//      <h1>Labs</h1>
-//      ...
-//      <ReduxExamples/>
-//    </div>
-//  );
+
+
 
