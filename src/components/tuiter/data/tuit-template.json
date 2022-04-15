@@ -5,6 +5,7 @@
       "username": "Me"
     },
     "liked": false,
+    "disliked": false,
     "verified": false,
     "handle": "Me",
     "time": "Right Now",

@@ -14,10 +14,18 @@ switch (action.type) {
           ...state,
           action.newTuit
         ];
+
+//           case UPDATE_TUIT:
+//             return state.map(
+//               tuit => tuit._id === action.tuit._id ?
+//                 action.tuit : tuit);
+//         }
+
    case UPDATE_TUIT:
         return state.map(
           tuit => tuit._id === action.tuit._id ?
             action.tuit : tuit);
+
     case 'like-tuit':
           return state.map(tuit => {
             if(tuit._id === action.tuit._id) {
@@ -31,6 +39,7 @@ switch (action.type) {
               return tuit;
             } else {
               return tuit;}});
+
     case 'dislike-tuit':
               return state.map(tuit => {
                 if(tuit._id === action.tuit._id) {

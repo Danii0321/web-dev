@@ -54,12 +54,8 @@ const TuitListItem = ({tuit}) => {
                     <i className="fas fa-retweet" style={{color:"white", paddingRight:10}}></i>
                         {tuit.stats.retuits}
                 </div>
-                <div className="col-2 ">
                     <TuitStats tuit={tuit}/>
-                </div>
-                <div className="col-2 ">
                     <TuitDislike tuit={tuit}/>
-                </div>
             </div>
         </div>
 

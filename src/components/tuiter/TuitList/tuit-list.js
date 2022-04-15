@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector}
   from "react-redux";
 import TuitListItem from "./tuit-list-item"
-import {deleteTuit, findAllTuits}
+import { createTuit, deleteTuit, findAllTuits}
   from "./../actions/tuits-actions";
 
 const TuitList = () => {
@@ -24,6 +24,7 @@ const TuitList = () => {
                   <i className="fa fa-times float-end" style={{padding: 10}}
                     onClick={() => deleteTuit(
                     dispatch, tuit)}></i>
+
                     <TuitListItem key={tuit._id}
                                   tuit={tuit}/>
                   </div>)
