@@ -25,7 +25,15 @@ const WhatsHappening = () => {
                                onChange={(event) => {
                         setWhatsHappening(event.target.value)
                         setNewTuit({...newTuit,
-                            tuit: event.target.value})}
+                            "topic":"Web Development",
+                            tuit: event.target.value,
+                            handle: "dani",
+                            time: "Now",
+                            "avatar-image" : "../../../../tuiter/images/dani.jpg",
+                            liked: false,
+                            disliked: false,
+                            verified: false
+                            })}
                         }>
                       </textarea>
                     </div>
