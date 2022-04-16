@@ -1,7 +1,7 @@
 import axios from 'axios';
 // const TUITS_API = 'http://localhost:4000/api/tuits'
-//const TUITS_API = 'https://full-stack-developer-server-3.herokuapp.com/api/tuits';
-const TUITS_API = process.env.MONGODB_URI;
+const TUITS_API = process.env.DB_CONNECTION_STRING;
+// const TUITS_API = process.env.MONGODB_URI;
 //const API_BASE = process.env.REACT_APP_API_BASE;
 //const TUITS_API = `${API_BASE}/tuits`;
 
